@@ -8,12 +8,10 @@ class SwiftVersionMcp < Formula
     depends_on "swift"
   
     def install
-      cd "SwiftVersionMCP-1.2.0" do
         # Use Homebrew's Swift explicitly
         swift_bin = Formula["swift"].opt_bin/"swift"
         system swift_bin, "build", "--configuration", "release"
         bin.install ".build/release/SwiftVersionMCP" => "swift-version-mcp"
-      end
     end
   
     test do
