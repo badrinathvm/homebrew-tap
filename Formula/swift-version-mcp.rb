@@ -3,7 +3,7 @@ class SwiftVersionMcp < Formula
     homepage "https://github.com/badrinathvm/SwiftVersionMCP"
     url "https://github.com/badrinathvm/SwiftVersionMCP/archive/refs/heads/main.tar.gz"
     version "1.2.0"
-    sha256 :no_check
+    sha256 "70583451155641a75fb3f54d0ef8616200ec985f56e71ef3757affd24ad4659f"
   
     depends_on "swift"
   
