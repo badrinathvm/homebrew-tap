@@ -11,3 +11,6 @@ git push origin v1.0.0
  curl -L "https://github.com/badrinathvm/SwiftVersionMCP/archive/1.0.0.tar.gz"|shasum -a 256
 
 
+# Users can install with
+brew tap badrimathvm/tap
+brew install swift-version-mcp
