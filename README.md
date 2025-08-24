@@ -12,5 +12,5 @@ git push origin v1.0.0
 
 
 # Users can install with
-brew tap badrimathvm/tap
+brew tap badrinathvm/tap
 brew install swift-version-mcp
