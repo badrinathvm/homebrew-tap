@@ -8,32 +8,8 @@ class SwiftVersionMcp < Formula
     depends_on "swift"
   
     def install
-      # Debug what's actually there
-      puts "=== Current directory: ==="
-      system "pwd"
-      system "ls", "-la"
-      
-      # Find all directories
-      dirs = Dir.glob("*").select { |f| File.directory?(f) }
-      puts "=== Found directories: #{dirs} ==="
-      
-      # Look for SwiftVersionMCP-related directories
-      swift_dirs = dirs.select { |d| d.include?("SwiftVersionMCP") }
-      puts "=== SwiftVersionMCP directories: #{swift_dirs} ==="
-      
-      if swift_dirs.any?
-        target_dir = swift_dirs.first
-        puts "=== Using directory: #{target_dir} ==="
-        cd target_dir do
-          system "swift", "build", "--configuration", "release", "--disable-sandbox"
-          bin.install ".build/release/SwiftVersionMCP" => "swift-version-mcp"
-        end
-      else
-        # Build in current directory if no subdirectory found
-        puts "=== Building in current directory ==="
-        system "swift", "build", "--configuration", "release", "--disable-sandbox"
-        bin.install ".build/release/SwiftVersionMCP" => "swift-version-mcp"
-      end
+      system "swift", "build", "--configuration", "release", "--disable-sandbox"
+      bin.install ".build/release/swift-version-mcp"
     end
   
     test do
