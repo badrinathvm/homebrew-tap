@@ -8,34 +8,29 @@ class SwiftVersionMcp < Formula
     depends_on "swift"
   
     def install
-      # Debug: Show what's actually in the extracted directory
       puts "=== Current directory contents ==="
       system "pwd"
       system "ls", "-la"
       
-      puts "=== Looking for directories ==="
-      system "find", ".", "-type", "d", "-maxdepth", "2"
+      puts "=== All files recursively ==="
+      system "find", ".", "-type", "f"
       
-      puts "=== Looking for Package.swift ==="
+      puts "=== Looking for Package.swift anywhere ==="
       system "find", ".", "-name", "Package.swift"
       
-      # Try to find any directory that might be the extracted one
-      extracted_dirs = Dir.glob("SwiftVersionMCP*")
-      puts "=== Found SwiftVersionMCP directories: #{extracted_dirs} ==="
+      puts "=== Looking for any .swift files ==="
+      system "find", ".", "-name", "*.swift"
       
-      if extracted_dirs.empty?
-        # If no SwiftVersionMCP directory, maybe it's extracted directly
-        swift_bin = Formula["swift"].opt_bin/"swift"
-        system swift_bin, "build", "--configuration", "release"
-        bin.install ".build/release/SwiftVersionMCP" => "swift-version-mcp"
+      # Check if Package.swift exists in current directory
+      if File.exist?("Package.swift")
+        puts "=== Package.swift found in current directory ==="
       else
-        # Use the first found directory
-        cd extracted_dirs.first do
-          swift_bin = Formula["swift"].opt_bin/"swift"
-          system swift_bin, "build", "--configuration", "release"
-          bin.install ".build/release/SwiftVersionMCP" => "swift-version-mcp"
-        end
+        puts "=== Package.swift NOT found in current directory ==="
       end
+      
+      swift_bin = Formula["swift"].opt_bin/"swift"
+      system swift_bin, "build", "--configuration", "release"
+      bin.install ".build/release/SwiftVersionMCP" => "swift-version-mcp"
     end
   
     test do
