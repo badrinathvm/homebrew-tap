@@ -52,6 +52,9 @@ Add the following configuration to your `mcp.json` file:
 }
 ```
 
+<img width="440" height="479" alt="Screenshot 2025-08-24 at 2 07 30 PM" src="https://github.com/user-attachments/assets/7452eb28-6fc7-45a6-916e-080f1dafd511" />
+
+
 ### Local Development Configuration
 
 If you're building from source locally, use:
