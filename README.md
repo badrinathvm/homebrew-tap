@@ -22,7 +22,7 @@ A Model Context Protocol (MCP) server that provides Swift version information an
 brew tap badrinathvm/tap
 
 # Install the Swift Version MCP server
-brew install swift-version-mcp
+brew install swift-dev-tools-mcp
 ```
 
 ### Verify Installation
