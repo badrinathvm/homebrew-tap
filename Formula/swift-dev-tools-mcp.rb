@@ -1,10 +1,10 @@
 class SwiftDevToolsMcp < Formula
     desc "Swift Dev Tools MCP"
     homepage "https://github.com/badrinathvm/swift-dev-tools-mcp.git"
-    url "https://github.com/badrinathvm/swift-dev-tools-mcp/archive/refs/heads/main.tar.gz"
+    url "https://github.com/badrinathvm/swift-dev-tools-mcp/archive/refs/tags/v1.0.0.tar.gz"
     version "1.0.0" 
-    sha256 "bafbd522f768670091d7708d862fd2f6b4d76dff4b7ffc3f8bb24fbe6a84f4c1"
-  
+    sha256 "5885776a42cee23772b1227657306607d5da9b22c0bd0dbaeb08aff0897d8c00"
+
     depends_on "swift"
   
     def install
