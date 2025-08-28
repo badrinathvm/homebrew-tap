@@ -3,7 +3,7 @@ class SwiftDevToolsMcp < Formula
     homepage "https://github.com/badrinathvm/swift-dev-tools-mcp.git"
     url "https://github.com/badrinathvm/swift-dev-tools-mcp/archive/refs/heads/main.tar.gz"
     version "1.0.0" 
-    sha256 "c6c0912b3fb8e3a4a750465be7d7be51b9f8826992deff71a48fbc90e5025940"
+    sha256 "bafbd522f768670091d7708d862fd2f6b4d76dff4b7ffc3f8bb24fbe6a84f4c1"
   
     depends_on "swift"
   
