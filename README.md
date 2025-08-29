@@ -35,6 +35,12 @@ swift-dev-tools-mcp --help
 which swift-dev-tools-mcp
 ```
 
+**To get upgrade to latest one**
+
+```bash
+ brew update && brew upgrade swift-dev-tools-mcp
+```
+
 ## 🔌 MCP Configuration
 
 ### 🤖 For Claude Desktop or other MCP clients
