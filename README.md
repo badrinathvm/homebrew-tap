@@ -58,6 +58,11 @@ Add this configuration to your `mcp.json` file:
 }
 ```
 
+### For Claude Code Terminal 
+```bash
+ claude mcp add swift-dev-tools --transport stdio -- swift-dev-tools-mcp
+```
+
 <img width="440" height="479" alt="Screenshot 2025-08-24 at 2 07 30 PM" src="https://github.com/user-attachments/assets/7452eb28-6fc7-45a6-916e-080f1dafd511" />
 
 ### 🏗️ Local Development Configuration
