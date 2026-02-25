@@ -3,7 +3,7 @@ class StepperviewMcp < Formula
   homepage "https://github.com/badrinathvm/StepperView"
   url "https://github.com/badrinathvm/StepperView/archive/refs/tags/2.0.2.tar.gz"
   version "2.0.2"
-  sha256 "00cdd79042920fb2fa3ff1ac8b6fd923ae270b5c263f9e37b1f681b0901c2c03"
+  sha256 "764e13a8cd87596cfb4190f94179be5399d78e00c0e9f0a08f6449e11946c9d2"
 
   depends_on "swift"
   depends_on :macos
