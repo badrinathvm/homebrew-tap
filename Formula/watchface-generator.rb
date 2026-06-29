@@ -2,7 +2,7 @@
 class WatchfaceGenerator < Formula
     desc "Generate .watchface files from a JSON config — no Apple Watch required"
 
-    homepage "https://github.com/badrinathvm/WatchFaceGenerator"
+    homepage "https://github.com/badrinathvm/WatchFaceGenerator.git"
 
     url "https://github.com/badrinathvm/WatchFaceGenerator/archive/refs/tags/v1.0.0.tar.gz"
     version "1.0.0"
